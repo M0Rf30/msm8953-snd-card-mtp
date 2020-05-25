@@ -15,7 +15,7 @@ and so on
 sudo apk add triggerhappy
 sudo rc-service add triggerhappy default
 cp etc/triggerhappy/triggers.d/buttons.conf /etc/triggerhappy/triggers.d/
-echo "thd --triggers /etc/triggerhappy/triggers.d/ /dev/input/event*" > ~/.profile
+echo "thd --triggers /etc/triggerhappy/triggers.d/ /dev/input/event* --daemon" >> ~/.profile
 ```
 # Working
 * Jack Sensing (switch between headphones and speakers)
