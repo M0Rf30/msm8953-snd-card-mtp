@@ -12,9 +12,13 @@ function volume_down() {
 	$AMIX set Master 5%-
 }
 
+function volume_mute() {
+	$AMIX set Master 1+ toggle
+}
+
 function display_help() {
 	echo "Usage:"
-	echo "$0 [ up | down ]"
+	echo "$0 [ up | down | mute ]"
 }
 
 case "$1" in
